@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- BOOTSTRAP CSS START-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP CSS END-->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contact Aleksey</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TOP SECTION -->
+    <header>
+      <div class="header-logo">
+        <a class="header-logo-name" href="index.html">Aleksey Nisenboym</a>
+        <a class="header-logo-title" href="index.html">Freelance Illustrator</a>
+      </div>
+      <nav class="header-nav">
+        <a class="header-nav-element" href="index.html">Home</a>
+        <a class="header-nav-element" href="about.html">About</a>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- ABOUT SECTION -->
+    <section class="contact">
+      <div class="contact-title">
+        <h1>Get in touch!</h1>
+      </div>
+
+      <form id="contact-form" class="form-horizontal">
+        <fieldset>
+          <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-2" for="lastName">Name</label>
+            <div class="col-sm-9">
+              <div class="col-xs-3">
+                <input
+                  type="text"
+                  name="name[first]"
+                  class="form-control"
+                  placeholder="First"
+                  id="first-name"
+                  aria-describedby="firstNameStatus"
+                  autofocus
+                />
+                <span
+                  class="glyphicon glyphicon-ok form-control-feedback"
+                  aria-hidden="true"
+                ></span>
+                <span id="firstNameStatus" class="sr-only">(success)</span>
+              </div>
+              <br />
+              <div class="col-xs-3">
+                <input
+                  type="text"
+                  name="name[last]"
+                  class="form-control"
+                  placeholder="Last"
+                  id="last-name"
+                  aria-describedby="lastNameStatus"
+                />
+                <span
+                  class="glyphicon glyphicon-ok form-control-feedback"
+                  aria-hidden="true"
+                ></span>
+                <span id="lastNameStatus" class="sr-only">(success)</span>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-3" for="inputGroupSuccess2"
+              >Email Address</label
+            >
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputGroupSuccess2"
+                  placeholder="name@example.com"
+                  aria-describedby="inputGroupSuccess2Status"
+                />
+              </div>
+              <span
+                class="glyphicon glyphicon-ok form-control-feedback"
+                aria-hidden="true"
+              ></span>
+              <span id="inputGroupSuccess2Status" class="sr-only"
+                >(success)</span
+              >
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <input class="btn btn-default" type="submit" value="Submit" />
+        </fieldset>
+        <!-- Button end -->
+        <p id="error-message"></p>
+      </form>
+    </section>
+
+    <!-- BOTTOM SECTION -->
+    <footer>
+      <div class="footer-icons">
+        <div id="home" class="footer-info">
+          <a href="index.html">
+            <img
+              src="images/icons/Home-01.png"
+              class="footer-info-image"
+              alt="Homepage"
+            />
+          </a>
+          <a class="footer-info-link" href="index.html">Home</a>
+        </div>
+        <div id="about" class="footer-info">
+          <a href="about.html">
+            <img
+              src="images/icons/About.png"
+              class="footer-info-image"
+              alt="About"
+            />
+          </a>
+          <a class="footer-info-link" href="about.html">About</a>
+        </div>
+        <div id="insta" class="footer-info">
+          <a href="https://www.instagram.com/artofaleksey/" target="_blank">
+            <img
+              src="images/icons/Insta.png"
+              class="footer-info-image"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            class="footer-info-link"
+            href="https://www.instagram.com/artofaleksey/"
+            target="_blank"
+            >Instagram
+          </a>
+        </div>
+        <div id="twitter" class="footer-info">
+          <a href="https://twitter.com/artofaleksey" target="_blank">
+            <img
+              src="images/icons/Twitter-01.png"
+              class="footer-info-image"
+              alt="Twitter"
+            />
+          </a>
+          <a
+            class="footer-info-link"
+            href="https://twitter.com/artofaleksey"
+            target="_blank"
+            >Twitter
+          </a>
+        </div>
+      </div>
+      <h6>
+        © Aleksey Nisenboym
+      </h6>
+    </footer>
+
+    <!-- BOOTSTRAP JS START-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS END-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- COL NAME OPTION -->
+<!-- <div class="col-sm-9"></div> -->
+
+<!-- Button -->
+<!-- <input type="submit" value="Submit" /> -->
+
+<!-- EMAIL OPTION ORG START -->
+<!-- <div class="form-group">
+            <label for="exampleFormControlInput1">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div> -->
+<!-- EMAIL OPTION ORG END -->
